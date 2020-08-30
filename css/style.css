@@ -1,0 +1,223 @@
+  body {
+    margin: 0;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:link {
+    color: black;
+  }
+  a:hover {
+    font-weight: 900;
+  }
+  header {
+    background-color:white;
+    padding: 10px 10px 10px 10px;
+  }
+  .navbar {
+    display: inline-block;
+    padding-left: 15px;
+  }
+  .name {
+    font-family: 'Roboto Slab', serif;
+    font-weight: normal;
+    font-size: 36px;
+  }
+  .title {
+    font-family: 'Blinker', sans-serif;
+    font-size: 18px;
+  }
+  header ul {
+    float: right;
+    color: black;
+    font-family: 'Blinker', sans-serif;
+  }
+  header li {
+    margin-top: 35px;
+    display: inline-block;
+    padding: 15px 15px;
+  }
+  header p {
+    display: inline-block;
+  }
+  .heroImg {
+    background-color: white;
+    padding: 15px 400px 15px 400px;
+    font-family: 'Blinker', sans-serif;
+  }
+  .content {
+    padding: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  button {
+    padding: 15px;
+    background-color: #373738;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  footer {
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    color: black;
+    float: right;
+    margin-top: 0rem;
+  }
+  footer ul {
+    list-style: none;
+    padding-left: 5px;
+    float: right;
+  }
+  footer li {
+    display: inline-block;
+    padding: 0px 15px;
+    font-family: 'Blinker', sans-serif;
+  }
+  #heroGrid {
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "leftBlockTop rightBlockTop"
+    "leftBlockBottom rightBlockBottom";
+  }
+  #leftBlockTop {
+      grid-area: leftBlockTop;
+      background-color: #83949B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .iconTextContain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .k9pic {
+    height: 124px;
+    width: 118px;
+  }
+  #leftBlockBottom {
+      grid-area: leftBlockBottom;
+      background-color: #122448;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .cutNrun {
+    height: 124px;
+    width: 89px;
+    color: white;
+  }
+  #rightBlockTop {
+      grid-area: rightBlockTop;
+      background-color: #003865;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .DHSpic {
+    height: 124px;
+    width: 161px;
+  }
+  #rightBlockBottom {
+      grid-area: rightBlockBottom;
+      background-color: #D4F0FF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+h2 {
+  font-family: 'Blinker', sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+/* Typewriter Text */
+.topType {
+  text-align: center;
+  color: black;
+}
+
+/* Responsive Elements */
+
+@media only screen and (max-width: 1000px) {
+  #heroGrid {
+    grid-template-areas:
+    "leftBlockTop rightBlockTop"
+    "leftBlockBottom rightBlockBottom";
+  }
+  .heroImg {
+    padding: 15px 200px 15px 200px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #heroGrid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-template-areas:
+    "leftBlockTop" 
+    "rightBlockTop"
+    "leftBlockBottom"
+    "rightBlockBottom";
+  }
+  body {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+  }
+  footer {
+    margin-top: 10rem;
+  }
+  p {
+    font-family: 'Blinker', sans-serif;
+  }
+}
+
+/* Start Responsive Menu CSS */
+
+  .mobile-nav {
+    float: right;
+    margin-top: 35px;
+  }
+  .menu-btn span {
+    display: block;
+    width: 19px;
+    height: 3px;
+    margin: 4px 0;
+    background: black;
+  }
+  
+  .responsive-menu{
+    display: none;
+    max-width: 120px;
+    margin-right: 0;
+    height: 400px;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+  }
+    li {
+      margin: 4px;
+      padding: 5px;
+      color: black;
+      list-style-type: none;
+    }
+  
+  .expand {
+    display: block !important;
+  }
+  
+  
+  /* Horizontal Navbar Below */
+  .nav-horizontal {
+    margin: -10px;
+  }
